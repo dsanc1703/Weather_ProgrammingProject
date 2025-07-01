@@ -1,0 +1,10 @@
+<html>
+<head>
+  <title>Weather Results</title>
+</head>
+<body>
+	<h1> Weather for ZIP Code: {{zipcode}} <!--For flask, when you send parameters to templates, the variable can be placed in {{}} so in the python file, when you send zipcode to /results, it would placed in {{zipcode}}-->
+	<p><strong>Temperature:<strong> {{temperature}} Farenehiet </p>
+	<a href="/weather">Search another zipcode!</a>
+</body>
+</html>
