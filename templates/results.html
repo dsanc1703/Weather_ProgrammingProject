@@ -1,14 +1,10 @@
 <html>
-<nav class="navbar navbar-expand-sm">
-<div class="nav-content">
-      <div class="logo">
-        <a href="#">Welcome</a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="dashboard.html">Back to the Dashboard</a></li>
-      </ul>
-    </div>
-
-</nav>
-
+<head>
+  <title>Weather Results</title>
+</head>
+<body>
+	<h1> Weather for ZIP Code: {{zipcode}} <!--For flask, when you send parameters to templates, the variable can be placed in {{}} so in the python file, when you send zipcode to /results, it would placed in {{zipcode}}-->
+	<p><strong>Temperature:<strong> {{temperature}} Farenehiet </p>
+	<a href="/weather">Search another zipcode!</a>
+</body>
 </html>
