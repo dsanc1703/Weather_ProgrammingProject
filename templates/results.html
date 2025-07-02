@@ -3,8 +3,8 @@
   <title>Weather Results</title>
 </head>
 <body>
-	<h1> Weather for ZIP Code: {{ zipcode }} Country Code: {{ countrycode }}<!--For flask, when you send parameters to templates, the variable can be placed in {{}} so in the python file, when you send zipcode to /results, it would placed in {{zipcode}}-->
-	</h1>
+	<h1> Weather for ZIP Code: {{ zipcode }} Country Code: {{ countrycode }} </h1>
+<!--For flask, when you send parameters to templates, the variable can be placed in double curly brackets so in the python file, when you send zipcode to /results, it would placed in curly brackets zipcode curly brackets-->
 	<p><strong>Weather:</strong> {{ data }} </p>
 	<a href="/dashboard">Search another zipcode!</a>
 </body>

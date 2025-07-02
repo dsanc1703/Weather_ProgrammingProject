@@ -1,7 +1,7 @@
-from flask import Flask, render_template, request, redirect, flash, url_for, session
 import requests
+from flask import Flask, render_template, request, redirect, flash, url_for, session
 app = Flask(__name__)
-
+app.secret_key = 'q92fj!f0f9a#q0v@d1f' #this is need for the session in lines 13,14 cuz flask encrypts to verify data integrity
 API_KEY = '42cde0c47c9e6b1e75515d281cc65587'
 
 #api_url = 'https://api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}&appid={API_KEY}'
