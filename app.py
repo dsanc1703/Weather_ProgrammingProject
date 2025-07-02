@@ -12,7 +12,7 @@ def dashboard():
         country_code = request.form['country_code']
         session['zip_code'] = zip_code
         session['country_code'] = country_code
-        return render_template('dashboard.html')
+        return render_template('dashboard.html')  
     return render_template('results.html')
     
     response = requests.get(api_url)
