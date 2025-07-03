@@ -1,0 +1,241 @@
+[33mcommit b02fc77731bda780e43514bfb90deb6ce1be61a9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Merge: aa60ebc daf5ee2
+Author: BothLotus <hiramgtorres82@gmail.com>
+Date:   Thu Jul 3 18:57:43 2025 -0400
+
+    Merge branch 'main' of https://github.com/dsanc1703/Weather_ProgrammingProject
+
+[33mcommit daf5ee2a88d3037de393bed75ec27e493061850b[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Danniell Sanchez-Palacios <sanchezdanniell@gmail.com>
+Date:   Thu Jul 3 18:57:21 2025 -0400
+
+    rollback
+
+[33mcommit aa60ebc5400f87d7c2943678d557ae44e1304fdc[m
+Merge: e2d4d18 5c38ec1
+Author: BothLotus <hiramgtorres82@gmail.com>
+Date:   Thu Jul 3 18:48:23 2025 -0400
+
+    Merge branch 'main' of https://github.com/dsanc1703/Weather_ProgrammingProject
+
+[33mcommit e2d4d185190a5eb457dc1420aea9b581f223f597[m
+Author: BothLotus <hiramgtorres82@gmail.com>
+Date:   Thu Jul 3 18:48:03 2025 -0400
+
+    added the footer for dashboard
+
+[33mcommit 5c38ec1c8d139ca6585d3ca2311b169ee280d9f8[m
+Author: Danniell Sanchez-Palacios <sanchezdanniell@gmail.com>
+Date:   Thu Jul 3 18:35:20 2025 -0400
+
+    pages for login,signup, dashboard
+
+[33mcommit 567cbc621ffbbc899375f75f7a2da1643717dc59[m
+Author: BothLotus <hiramgtorres82@gmail.com>
+Date:   Thu Jul 3 18:31:45 2025 -0400
+
+    added static folder with css file
+
+[33mcommit 5955ca199b75c0403efa9261a5cdda27282d1c6f[m
+Author: Danniell Sanchez-Palacios <sanchezdanniell@gmail.com>
+Date:   Thu Jul 3 18:27:14 2025 -0400
+
+    fixed app
+
+[33mcommit 6e9b92dfb0915427a87b9e3b048dd45474709776[m
+Merge: e6cf93c 0995342
+Author: Danniell Sanchez-Palacios <sanchezdanniell@gmail.com>
+Date:   Thu Jul 3 18:25:03 2025 -0400
+
+    dashboard and /
+
+[33mcommit e6cf93c5df1b51eb088e5de46c946ed4e572a1b4[m
+Author: Danniell Sanchez-Palacios <sanchezdanniell@gmail.com>
+Date:   Thu Jul 3 18:23:45 2025 -0400
+
+    dashboard = /
+
+[33mcommit 09953425e5ff77ef1d56d1825d25ecf18896547c[m
+Author: BothLotus <hiramgtorres82@gmail.com>
+Date:   Thu Jul 3 18:22:24 2025 -0400
+
+    added navbar to dashboard
+
+[33mcommit d5d279630b86c8e3b6394336afa4ac0c841b9927[m
+Author: BothLotus <hiramgtorres82@gmail.com>
+Date:   Thu Jul 3 18:14:59 2025 -0400
+
+    __pycache__
+
+[33mcommit bc271f07a0e7f56f8ebf6a0de7487eec94afbfbd[m
+Merge: 23eed3d 4cb29e4
+Author: BothLotus <hiramgtorres82@gmail.com>
+Date:   Thu Jul 3 18:14:28 2025 -0400
+
+    Merge branch 'main' of https://github.com/dsanc1703/Weather_ProgrammingProject
+
+[33mcommit 4cb29e47f0f8b03d6db34f492f5b2e94cdfee333[m
+Author: Danniell Sanchez <sanchezdanniell@gmail.com>
+Date:   Thu Jul 3 18:12:50 2025 -0400
+
+    Update .gitignore
+
+[33mcommit f0ffbcff2975a1075fd713a9edcbd8ae5dcf730d[m
+Author: Danniell Sanchez-Palacios <sanchezdanniell@gmail.com>
+Date:   Thu Jul 3 18:10:08 2025 -0400
+
+    added signup/login
+
+[33mcommit 23eed3da0e9c2fbde1b3e1fcc143e02b89541c1c[m
+Author: BothLotus <hiramgtorres82@gmail.com>
+Date:   Thu Jul 3 17:26:06 2025 -0400
+
+    added the /dashboard in app.py
+
+[33mcommit 0313664618e6135cd34cbf053955604e5111193e[m
+Author: Danniell Sanchez <sanchezdanniell@gmail.com>
+Date:   Thu Jul 3 17:17:01 2025 -0400
+
+    Delete venv directory
+
+[33mcommit f73dab9a519fb8a6c9b7729dfe02b44e144ff456[m
+Author: Danniell Sanchez-Palacios <sanchezdanniell@gmail.com>
+Date:   Tue Jul 1 20:24:52 2025 -0400
+
+    editted comments to avoid parsing issues (dumb jinja in flask). Review README to see modules to install in venv
+
+[33mcommit e8d6e0a167d9007f63dfd0d69e9e3e2c603e11a5[m
+Merge: 8a36868 4551544
+Author: BothLotus <hiramgtorres82@gmail.com>
+Date:   Tue Jul 1 20:16:47 2025 -0400
+
+    Merge branch 'main' of https://github.com/dsanc1703/Weather_ProgrammingProject
+
+[33mcommit 8a36868d927400624cd43d64ce88ce4847fa7d77[m
+Author: BothLotus <hiramgtorres82@gmail.com>
+Date:   Tue Jul 1 20:13:33 2025 -0400
+
+    python changes
+
+[33mcommit 4551544cc9b9887f779b25eb7bb7f889b465be71[m
+Author: Danniell Sanchez <sanchezdanniell@gmail.com>
+Date:   Tue Jul 1 20:13:11 2025 -0400
+
+    Update README.md
+
+[33mcommit 928c057f8b33ce4e17ddaaf447dca5189d410163[m
+Author: Danniell Sanchez-Palacios <sanchezdanniell@gmail.com>
+Date:   Tue Jul 1 19:50:23 2025 -0400
+
+    Revised htmls and py :)
+
+[33mcommit c2e9c7ef8b9fe63c33d24b7eddbe586f5ed1ca1c[m
+Merge: 84546c5 f1c738d
+Author: BothLotus <hiramgtorres82@gmail.com>
+Date:   Tue Jul 1 19:01:13 2025 -0400
+
+    Merge branch 'main' of https://github.com/dsanc1703/Weather_ProgrammingProject
+
+[33mcommit 84546c51be1098dd804189ece26c0bf22beda801[m
+Author: BothLotus <hiramgtorres82@gmail.com>
+Date:   Tue Jul 1 18:57:59 2025 -0400
+
+    added some python
+
+[33mcommit f1c738dc27567bc606ed473d109b0c7561edfa1f[m
+Author: Danniell Sanchez-Palacios <sanchezdanniell@gmail.com>
+Date:   Tue Jul 1 18:56:14 2025 -0400
+
+    Added templates folder for flask to read. Placed dashboard (placeholder) and results htmls in templates/
+
+[33mcommit bd22b9ddceea9e82b9031817c372deb5fb5b899d[m
+Author: Danniell Sanchez <sanchezdanniell@gmail.com>
+Date:   Tue Jul 1 18:24:33 2025 -0400
+
+    Update README.md
+
+[33mcommit 50cf558df2e3858699f3947f8bb2e05bd1bc5807[m
+Author: BothLotus <hiramgtorres82@gmail.com>
+Date:   Tue Jul 1 17:52:26 2025 -0400
+
+    added dashboard definition
+
+[33mcommit d7decb625f27722b577925c4149c8ca680fcf6f5[m
+Merge: 9b39b33 438fbde
+Author: BothLotus <hiramgtorres82@gmail.com>
+Date:   Tue Jul 1 17:35:56 2025 -0400
+
+    Merge branch 'main' of https://github.com/dsanc1703/Weather_ProgrammingProject
+
+[33mcommit 9b39b33fc7aaa152b05441c47e6b035deb576f01[m
+Merge: 3559b7a 956558a
+Author: BothLotus <hiramgtorres82@gmail.com>
+Date:   Tue Jul 1 16:59:08 2025 -0400
+
+    Merge branch 'main' of https://github.com/dsanc1703/Weather_ProgrammingProject
+
+[33mcommit 438fbdebdf8b5814fef411f63f4e093591e7efb0[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Danniell Sanchez-Palacios <sanchezdanniell@gmail.com>
+Date:   Tue Jul 1 16:56:58 2025 -0400
+
+    api key handling with .gitignore update
+
+[33mcommit 3559b7aad8dc0c3cda6bbf7a59cc48b43be20bd6[m
+Author: BothLotus <hiramgtorres82@gmail.com>
+Date:   Tue Jul 1 16:41:39 2025 -0400
+
+    added some html code
+
+[33mcommit 956558aebcfcbc0bbcd73022bfa801d9410fa3ff[m
+Author: Danniell Sanchez <sanchezdanniell@gmail.com>
+Date:   Tue Jul 1 16:23:26 2025 -0400
+
+    Delete ApiKey
+
+[33mcommit 48e0fc6d540766757b63a21e8560241217e35696[m
+Author: Danniell Sanchez <sanchezdanniell@gmail.com>
+Date:   Tue Jul 1 16:21:37 2025 -0400
+
+    Rename ApiKey.txt to ApiKey
+
+[33mcommit 6437b517a8e187452c16b44ab5d8818d4dbce5c3[m
+Author: Danniell Sanchez <sanchezdanniell@gmail.com>
+Date:   Tue Jul 1 16:21:00 2025 -0400
+
+    Create .gitignore
+
+[33mcommit bafaa7ff6d918f5374633c63b94259d986b81c0b[m
+Author: Danniell Sanchez <sanchezdanniell@gmail.com>
+Date:   Tue Jul 1 16:19:36 2025 -0400
+
+    Update ApiKey.txt
+
+[33mcommit 1bd476b0eb55e02d435a65f0652c7193a1dfd84e[m
+Author: Danniell Sanchez <sanchezdanniell@gmail.com>
+Date:   Tue Jul 1 16:18:09 2025 -0400
+
+    Create ApiKey.txt
+
+[33mcommit 22f2c5dc7acdf61ffcd76a07b0ebdbbf4d4751ac[m
+Author: Danniell Sanchez <sanchezdanniell@gmail.com>
+Date:   Tue Jul 1 16:05:48 2025 -0400
+
+    Rename Dashboard.html to dashboard.html
+
+[33mcommit 1f504d113658b79b25b6500867b5ae722af7b208[m
+Author: Danniell Sanchez <sanchezdanniell@gmail.com>
+Date:   Tue Jul 1 16:05:23 2025 -0400
+
+    Create app.py
+
+[33mcommit 4138937366d7aced5553de83b46c65f55f137b72[m
+Author: Danniell Sanchez <sanchezdanniell@gmail.com>
+Date:   Tue Jul 1 16:04:14 2025 -0400
+
+    Create Dashboard.html
+
+[33mcommit 97967ff318761064a6b513e8cc229c85a7c85947[m
+Author: Danniell Sanchez <sanchezdanniell@gmail.com>
+Date:   Tue Jul 1 15:54:21 2025 -0400
+
+    Initial commit
