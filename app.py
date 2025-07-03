@@ -8,7 +8,7 @@ API_KEY = '42cde0c47c9e6b1e75515d281cc65587'
 
 @app.route('/', methods=['GET','POST'])
 @app.route('/zipcode', methods=['GET','POST'])
-def dashboard():
+def zipcode():
     if request.method == "POST":
         zip_code = request.form['zip_code']
         country_code = request.form['country_code']
