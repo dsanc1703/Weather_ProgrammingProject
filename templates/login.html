@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<link href="/static/style.css" rel="stylesheet" type="text/css" />
+
+<nav class="navbar navbar-expand-sm">
+<div class="nav-content">
+      <div class="logo">
+        <a href="#">Welcome</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/signup">Signup</a></li>
+      </ul>
+    </div>
+</nav>
+
+</head>
+
+
+<body>
+<center class="text">
+<title>Log In</title>
+<h1>Welcome to our site! Use the following form to log in to your account!</h1>
+<body>
+<form method = 'POST' class='login-form' action = '/login'>
+	<label for="username">Username:</label><br>
+	<input type="text" id='username' name='username'><br id="us">
+	<label for="password">Password:</label><br>
+	<input type="password" id='password' name='password'><br id="ps">
+	<button type="submit">Log In</button><br>
+    Dont have an account? <a href='/signup'>Create an Account</a>
+</form>
+</center>
+</body>
+</body>
+<footer>
+<h2>hi</h2>
+</footer>
+</html>
