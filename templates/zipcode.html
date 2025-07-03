@@ -1,0 +1,36 @@
+<html>
+<!--HTML Page with form asking for zip code-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<link href="/static/style.css" rel="stylesheet" type="text/css" />
+
+<nav class="navbar navbar-expand-sm">
+<div class="nav-content">
+      <div class="logo">
+        <a href="#">Welcome</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/signup">Signup</a></li>
+      </ul>
+    </div>
+</nav>
+
+</head>
+<title>Weather</title>
+<h1>Welcome please type in a zipcode</h1>
+<body>
+<form method = 'POST' class='city-form' action = '/'>
+	<label for="zip_code">ZIP Code:</label><br>
+	<input type="text" id='zip_code' name='zip_code'><br>
+	
+	<label for="country_code">Country Code (just put <strong>us</strong>):</label><br>
+	<input type="text" id="country_code" name="country_code"><br>
+
+	<button type="submit">Search By ZIP</button>
+</form>
+</body>
+</html>
