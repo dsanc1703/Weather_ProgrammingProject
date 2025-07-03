@@ -29,3 +29,30 @@ def results():
 
     weather_data = response.json()
     return render_template('results.html', data=weather_data, zipcode=zip_code, countrycode=country_code)
+
+@app.route('/signup', methods=['GET', 'POST']) 
+def signup():    
+  if request.method == 'POST':   
+    username = request.form.get('username')
+    password = request.form.get('password')
+    users.append({'username':username, 'password':password})  
+    return redirect(url_for('login'))
+    #return '<h2>Thanks for signing up, ' + username + '!</h2>' #a confirmation message for the user
+  return render_template('signup.html')  #When user enters /signup, this line loads the html for signup
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+  if request.method == 'POST':
+    username = request.form.get('username')
+    password = request.form.get('password')
+    for user in users:
+            if user['username'] == username and user['password'] == password:
+                return redirect(url_for('dashboard'))
+              
+    return "<h1>There is no account matching. Try again</h1>"
+
+  return render_template('login.html')
+
+@app.route('/dashboard', methods=['GET'])
+def dashboard():
+  return render_template('dashboard.html')
