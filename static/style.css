@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+text{
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  justify-content: center; 
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font: 13px "Helvetica Neue", "Lucida Grande", "Arial";
+  background: #C2EFEB -webkit-gradient(linear, 100% 100%, 100% 0%, from(#fff), to(#C2EFEB));
+  background-repeat: no-repeat;
+  color: #555;
+}
+
+main {
+  flex: 1;
+}
+
+form {
+    height: 70vh;
+}
+
+.user{
+    border: 100px;
+}
+.pass{
+    border-top: 100px;
+}
+
+nav .logo a{
+  font-weight: 500;
+  font-size: 35px;
+  color: #4070f4;
+}
+
+.nav-content{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+
+
+nav .nav-content{
+  height: 100%;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-content .nav-links{
+  display: flex;
+}
+
+.nav-content .nav-links li{
+  list-style: none;
+  margin: 0 8px;
+}
+.nav-content .nav-links{
+  display: flex;
+}
+.nav-content .nav-links li{
+  list-style: none;
+  margin: 0 8px;
+}
+
+.nav-links li a:hover{
+   color: #4070f4;
+ }
+
+.nav-links li a{
+  text-decoration: none;
+  color: #0E2431;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 4px;
+  transition: all 0.3s ease;
+}
+
+footer {
+position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 10vh;
+  width: 100%;
+  background-color: #331E36;
+  color: white;
+  text-align: center;
+}
+
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.popup{
+    display: flex;
+}
