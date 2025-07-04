@@ -6,6 +6,7 @@ API_KEY = '42cde0c47c9e6b1e75515d281cc65587'
 
 #api_url = 'https://api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}&appid={API_KEY}'
 
+<<<<<<< HEAD
 users = []
 
 
@@ -14,15 +15,26 @@ def zipcode():
     if not session.get('logged_in'):
         return redirect(url_for('login'))
 
+=======
+@app.route('/', methods=['GET','POST'])
+@app.route('/dashboard', methods=['GET','POST'])
+def dashboard():
+>>>>>>> refs/remotes/origin/main
     if request.method == "POST":
         zip_code = request.form['zip_code']
         country_code = request.form['country_code']
         session['zip_code'] = zip_code
         session['country_code'] = country_code
         return redirect(url_for('results'))
+<<<<<<< HEAD
 
     return render_template('zipcode.html')
 
+=======
+    return render_template('dashboard.html')
+    
+    #response = requests.get(api_url)
+>>>>>>> refs/remotes/origin/main
 
 @app.route('/results')
 def results():
