@@ -43,6 +43,7 @@ def signup():
         username = request.form.get('username')
         password = request.form.get('password')
         users.append({'username': username, 'password': password})
+        flash("Successfully created account!")
         return redirect(url_for('login'))
     return render_template('signup.html')
 
@@ -56,6 +57,7 @@ def login():
             if user['username'] == username and user['password'] == password:
                 session['logged_in'] = True
                 return redirect(url_for('zipcode'))
+        flash("Invalid Username or Password")
     return render_template('login.html')
 
 

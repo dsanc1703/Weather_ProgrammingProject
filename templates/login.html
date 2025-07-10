@@ -26,7 +26,17 @@
 <body>
 <center class="text">
 <title>Log In</title>
-<h1>Welcome to our site! Use the following form to log in to your account!</h1><form method = 'POST' class='login-form' action = '/login'>
+<h1>Welcome to our site! Use the following form to log in to your account!</h1>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+      {% for message in messages %}
+        <strong>{{ message }}</strong>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+
+<form method = 'POST' class='login-form' action = '/login'>
 	<label for="username">Username:</label><br>
 	<input type="text" id='username' name='username'><br id="us">
 	<label for="password">Password:</label><br>
