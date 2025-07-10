@@ -11,24 +11,19 @@ users = []
 
 @app.route('/zipcode', methods=['GET','POST'])
 def zipcode():
-    if not session.get('logged_in'):
-        return redirect(url_for('login'))
     if request.method == "POST":
         zip_code = request.form['zip_code']
         country_code = request.form['country_code']
         session['zip_code'] = zip_code
         session['country_code'] = country_code
         return redirect(url_for('results'))
-
     return render_template('zipcode.html')
 
-@app.route('/results')
+@app.route('/results', methods=['GET'])
 def results():
     zip_code = session.get('zip_code')
     country_code = session.get('country_code')
-    if not zip_code or not country_code:
-        return redirect(url_for('dashboard'))
-
+    print("Fetching weather data")
     response = requests.get(
         f'https://api.openweathermap.org/data/2.5/weather?zip={zip_code},{country_code}&appid={API_KEY}'
     )
@@ -54,9 +49,7 @@ def login():
         password = request.form.get('password')
         for user in users:
             if user['username'] == username and user['password'] == password:
-                session['logged_in'] = True
-                return redirect(url_for('dashboard'))
-        flash("Invalid login.")
+                return redirect(url_for('zipcode'))
     return render_template('login.html')
 
 
