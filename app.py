@@ -1,13 +1,18 @@
-import requests
+import requests, os
 from flask import Flask, render_template, request, redirect, flash, url_for, session
 app = Flask(__name__)
-app.secret_key = 'q92fj!f0f9a#q0v@d1f' #this is need for the session in lines 13,14 cuz flask encrypts to verify data integrity
+app.secret_key = os.urandom(24) #this is need for the session in lines 13,14 cuz flask encrypts to verify data integrity
 API_KEY = '42cde0c47c9e6b1e75515d281cc65587'
 
 #api_url = 'https://api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}&appid={API_KEY}'
 
 users = []
 
+@app.before_request
+def loginauthentication():
+    protected_sites = ['zipcode','dashboard','results']
+    if request.endpoint in protected_sites and not session.get('logged_in'):
+        return redirect(url_for('login'))
 
 @app.route('/zipcode', methods=['GET','POST'])
 def zipcode():
@@ -49,12 +54,11 @@ def login():
         password = request.form.get('password')
         for user in users:
             if user['username'] == username and user['password'] == password:
+                session['logged_in'] = True
                 return redirect(url_for('zipcode'))
     return render_template('login.html')
 
 
 @app.route('/dashboard', methods=['GET'])
 def dashboard():
-    if session.get('logged_in'):
-        return render_template('dashboard.html')
-    return redirect(url_for('login'))
+    return render_template('dashboard.html')
